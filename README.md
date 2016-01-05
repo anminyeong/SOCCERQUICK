@@ -7,3 +7,9 @@
 
 # 앱 시연 동영상(Youtube)
 https://youtu.be/th9QcHrZPA0
+
+# 프로젝트 소개서  
+http://www.slideshare.net/fullscreen/ssusere650f9/naver-d2soccer-quick/1  
+
+# 사용한 오픈소스 이름과 홈페이지 목록  
+없음  
