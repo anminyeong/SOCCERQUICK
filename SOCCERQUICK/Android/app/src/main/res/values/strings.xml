@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">SoccerQuick</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">환경설정</string>
+    <string-array name = "people_array">
+        <item>전체보기</item>
+        <item>5 vs 5</item>
+        <item>6 vs 6</item>
+    </string-array>
+
+    <string-array name="item_array1">
+        <item>전체보기</item>
+        <item>중고거래</item>
+        <item>잡담</item>
+        <item>클럽원모집</item>
+        <item>정보공유</item>
+
+    </string-array>
+
+    <string-array name = "local_array">
+        <item>전체보기</item>
+        <item>유성구</item>
+        <item>서구</item>
+        <item>중구</item>
+        <item>동구</item>
+        <item>대덕구</item>
+    </string-array>
+
+    <string-array name = "ground_local">
+        <item>유성구</item>
+        <item>서구</item>
+        <item>중구</item>
+        <item>동구</item>
+        <item>북구</item>
+        <item>대덕구</item>
+    </string-array>
+    <string-array name = "match_people">
+        <item>5 vs 5</item>
+        <item>6 vs 6</item>
+    </string-array>
+    <string-array name = "ground_holiday">
+        <item>유</item>
+        <item>무</item>
+    </string-array>
+    <string-array name = "team_array">
+        <item>오프라인</item>
+        <item>A팀</item>
+        <item>B팀</item>
+    </string-array>
+
+    <string name="logo_title">로고를 선택하세요.</string>
+
+    <string name ="list_item_marker">분류를 선택하세요.</string>
+    <string-array name="item_array">
+        <item>중고거래</item>
+        <item>잡담</item>
+        <item>클럽원모집</item>
+        <item>정보공유</item>
+
+    </string-array>
+
+
+    <string-array name="ground_array">
+        <item>유성풋살구장</item>
+        <item>강변풋살구장</item>
+        <item>둔산풋살구장</item>
+
+    </string-array>
+
+    <string-array name="club_list">
+        <item>빠꾸없냐</item>
+        <item>싸카킥</item>
+        <item>드루와</item>
+    </string-array>
+
+
+    <string name="title_activity_board_main">자유게시판</string>
+    <string name="title_activity_make_club">클럽생성</string>
+    <string name="title_activity_join_club">join_club</string>
+    <string name="title_activity_club_list">club_list</string>
+    <string name="title_activity_club_logo_spinner">club_logo_spinner</string>
+    <string name="title_activity_board_write">게시글 작성</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_club_tab">클럽 메뉴</string>
+    <string name="title_activity_my_club">MyClub</string>
+    <string name="title_activity_club_board">클럽 게시판</string>
+    <string name="title_activity_ground_info">구장 상세보기</string>
+    <string name="title_activity_club_info">클럽 상세보기</string>
+    <string name="title_activity_club_info_list">club_info_list</string>
+    <string name="title_activity_club_info_apply_list">club_info_apply_list</string>
+    <string name="title_activity_board_info">게시글 상세보기</string>
+    <string name="title_activity_ground_schedule">코트 스케줄</string>
+    <string name="title_activity_join">join</string>
+    <string name="title_activity_loading">Loading</string>
+    <string name="title_activity_setting">환경설정</string>
+
+    <!-- 디자인추가-->
+    <string name="nav_item_attachment">Attachment</string>
+    <string name="nav_item_images">Images</string>
+    <string name="nav_item_location">My Location</string>
+    <string name="nav_sub_menu">Sub Menu</string>
+    <string name="nav_sub_menu_item01">매치 현황</string>
+    <string name="nav_sub_menu_item02">구장 현황</string>
+    <string name="nav_sub_menu_item03">MyClub</string>
+    <string name="nav_sub_menu_item04">자유게시판</string>
+    <string name="nav_sub_menu_item05">회원정보수정</string>
+    <string name="nav_sub_menu_item06">로그아웃</string>
+    <string name="drawer_header_text">Drawer Header</string>
+    <string name="second_activity_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur diam id aliquam scelerisque. Donec ultrices lacus vel dignissim pharetra. Vivamus pharetra augue quis rhoncus placerat. Sed ultricies at risus non cursus. Nam rutrum leo nec placerat consectetur. Vestibulum feugiat eleifend diam, nec interdum augue tincidunt sit amet. Praesent feugiat est auctor lacus consectetur, vitae pellentesque dolor laoreet.</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="title_activity_maps">Map</string>
+
+
+
+</resources>

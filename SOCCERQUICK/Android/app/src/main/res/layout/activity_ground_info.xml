@@ -1,0 +1,469 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.soccerquick2.ground.ground_info"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/ground_name"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <!--<fragment-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="230dp"-->
+            <!--android:id="@+id/map"-->
+            <!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
+            <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentLeft="true"></fragment>-->
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+
+            android:id="@+id/image"
+            android:layout_below="@+id/ground_name"
+
+
+
+            />
+
+
+
+
+        <ScrollView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/image"
+            android:layout_alignParentLeft="true">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:layout_weight="0.3"
+                        android:text="주소"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="15dp"
+                        android:layout_weight="5"
+                        android:text="대전시 유성구 봉명동"
+                        android:id="@+id/ground_address"/>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:layout_weight="0.3"
+                        android:text="지역대분류"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="15dp"
+                        android:layout_weight="5"
+                        android:text="대전"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:layout_weight="0.3"
+                        android:text="지역소분류"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="15dp"
+                        android:layout_weight="5"
+                        android:text="유성구"
+                        android:id="@+id/grd_local"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:layout_weight="0.3"
+                        android:text="전화번호"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="15dp"
+                        android:layout_weight="5"
+                        android:textColor="#0013ff"
+                        android:text="042-123-1234"
+                        android:id="@+id/ground_num"
+                        android:focusableInTouchMode="true" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:layout_weight="0.3"
+                        android:text="평점"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="15dp"
+                        android:layout_weight="5"
+                        android:text="4.5"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:layout_weight="0.3"
+                        android:text="코트정보"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="15dp"
+                        android:layout_weight="5"
+                        android:text="총 3개 코트"
+                        android:id="@+id/ground_court"/>
+
+                    <Button
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/abc"
+                        android:text="코트스케쥴보기"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:layout_weight="0.3"
+                        android:text="영업시간"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="15dp"
+                        android:layout_weight="5"
+                        android:text="0시 ~ 24시"
+                        android:id="@+id/ground_time"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:layout_weight="0.3"
+                        android:text="휴일정보"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="15dp"
+                        android:layout_weight="5"
+                        android:text="무"
+                        android:id="@+id/ground_holiday"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:layout_weight="0.3"
+                        android:text="요금정보"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="15dp"
+                        android:layout_weight="5"
+                        android:text="주간 50000원(시간당) / 야간 60000원"
+                        android:id="@+id/ground_fee"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:layout_weight="0.3"
+                        android:text="기타정보"/>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="15dp"
+                        android:layout_weight="5"
+                        android:text=""
+                        android:id="@+id/ground_etc"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="30dp">
+
+
+                    <LinearLayout
+                        android:layout_height="100dp"
+                        android:layout_width="50dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center"
+                            android:text="주차장"/>
+
+                        <CheckBox
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center"
+                            android:id="@+id/ground_parking"
+                            android:clickable="false"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_height="100dp"
+                        android:layout_width="50dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center"
+                            android:text="샤워장"/>
+
+                        <CheckBox
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center"
+                            android:id="@+id/ground_shower"
+                            android:clickable="false"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_height="100dp"
+                        android:layout_width="50dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center"
+                            android:text="매점"/>
+
+                        <CheckBox
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center"
+                            android:id="@+id/ground_market"
+                            android:clickable="false"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="길 찾기"-->
+            <!--android:id="@+id/button3"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_alignBottom="@+id/image"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true" />-->
+
+
+    </RelativeLayout>
+
+
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer"/>
+</android.support.v4.widget.DrawerLayout>

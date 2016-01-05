@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_weight="0.03"
+    android:background="#b2b9d7">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="5dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/round"
+        >
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/imageView"
+
+            android:layout_centerVertical="true" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@+id/textView13"
+            android:layout_alignBottom="@+id/court"
+            android:layout_centerVertical="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="지역 : "
+                android:id = "@+id/local"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id = "@+id/grd_name"
+                android:text=" "
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@+id/grd_local"
+                android:layout_alignStart="@+id/grd_local" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id = "@+id/grd_court"
+                android:text=" "
+                android:layout_alignTop="@+id/court"
+                android:layout_alignLeft="@+id/grd_local"
+                android:layout_alignStart="@+id/grd_local" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="코트 수: "
+                android:id = "@+id/court"
+                android:layout_below="@+id/local"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="구장 명 :"
+                android:id="@+id/textView13"
+                android:layout_above="@+id/local"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id = "@+id/grd_local"
+                android:text=" "
+                android:layout_alignTop="@+id/textView13"
+                android:layout_toRightOf="@+id/textView13"
+                android:layout_toEndOf="@+id/textView13" />
+
+        </RelativeLayout>
+
+        <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:text="전화걸기"-->
+        <!--android:id="@+id/callBtn"-->
+        <!--android:layout_below="@+id/grdBtn"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true" />-->
+
+
+        <Button android:layout_height="30dp"
+            android:layout_width="70dp"
+
+            android:id="@+id/callBtn"
+            android:onClick="user_login"
+            android:text="전화걸기"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:textColor="@color/icons"
+            android:background="@color/primary_dark"
+            android:ems ="6"
+            android:layout_below="@+id/grdBtn"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp" />
+
+        <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:text="스케줄"-->
+        <!--android:id="@+id/grdBtn"-->
+        <!--android:textSize="15dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignLeft="@+id/callBtn"-->
+        <!--android:layout_alignStart="@+id/callBtn"-->
+        <!--android:layout_marginTop="3dp" />-->
+
+        <Button android:layout_height="30dp"
+            android:layout_width="70dp"
+            android:id="@+id/grdBtn"
+            android:onClick="user_login"
+            android:text="위치보기"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/icons"
+            android:background="@color/primary_dark"
+            android:ems ="6"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/callBtn"
+            android:layout_alignStart="@+id/callBtn"
+            android:layout_marginTop="10dp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

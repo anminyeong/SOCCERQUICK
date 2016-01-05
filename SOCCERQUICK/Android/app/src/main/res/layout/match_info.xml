@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:text="제목"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:background="#616161"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout4"
+            android:layout_below="@+id/title"
+            android:layout_alignParentLeft="true">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/image"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayout3"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/image"
+                android:layout_toEndOf="@+id/image">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="작성자: "
+                    android:id = "@+id/user_id"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/user_id"
+                    android:text="asdf"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/member_id" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="작성날짜: "
+                    android:id = "@+id/board_date"
+                    android:layout_below="@+id/user_id"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/board_date"
+                    android:layout_below="@+id/user_id"
+                    android:text="2001.11.04"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/cur_date" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="구단명: "
+                    android:id = "@+id/club_name"
+                    android:layout_below="@+id/board_date"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/board_date"
+                    android:layout_toRightOf="@+id/club_name"
+                    android:text="어벤져스"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/club" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="경기인원: "
+                    android:id = "@+id/match_people"
+                    android:layout_below="@id/club_name"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/match_people"
+                    android:layout_below="@id/club_name"
+                    android:text="6 vs 6"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/person" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="지역: "
+                    android:id = "@+id/match_local"
+                    android:layout_below="@id/match_people"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/match_local"
+                    android:layout_below="@id/match_people"
+                    android:text="유성구"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/local" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="구장: "
+                    android:id = "@+id/match_stadium"
+                    android:layout_below="@id/match_local"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/match_stadium"
+                    android:layout_below="@id/match_local"
+                    android:text="유성 풋살장"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/stadium" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="경기시간: "
+                    android:id = "@+id/match_time"
+                    android:layout_below="@id/match_stadium"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/date"
+                    android:layout_toRightOf="@+id/match_time"
+                    android:layout_below="@id/match_stadium"
+                    android:text="2015.11.15 "
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/date"
+                    android:id="@+id/start"
+                    android:layout_below="@id/match_stadium"
+                    android:text="11시 "
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/start"
+                    android:layout_below="@id/match_stadium"
+                    android:id="@+id/temp"
+                    android:text="~ "
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/temp"
+                    android:layout_below="@id/match_stadium"
+                    android:text="12시"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/end" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="내용:"
+                    android:id="@+id/content"
+                    android:layout_below="@id/match_time"
+                    android:layout_marginTop="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/content"
+                    android:layout_below="@id/match_time"
+                    android:text="재밌게 게임합시다."
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/content1" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="대기중인 매치현황"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"
+            android:background="#616161"
+            android:id="@+id/textView10"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout4"
+            android:layout_alignParentLeft="true" />
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            tools:listitem="@android:layout/simple_list_item_2"
+
+            android:layout_weight="0.85"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView10"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@+id/linearLayout">
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout"
+            android:layout_above="@+id/matchBtn">
+
+
+            <Button android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/modBtn"
+                android:text="수정"
+                android:textStyle="bold"
+                android:textSize="@dimen/activity_horizontal_margin"
+                android:textColor="@color/icons"
+                android:background="@color/primary_dark"
+                android:ems ="6"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <Button android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/delBtn"
+                android:text="삭제"
+                android:textStyle="bold"
+                android:textSize="@dimen/activity_horizontal_margin"
+                android:textColor="@color/icons"
+                android:background="@color/primary_dark"
+                android:ems ="6"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+
+
+        <Button android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/matchBtn"
+            android:text="매치신청"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:textColor="@color/icons"
+            android:background="@color/primary_dark"
+            android:ems ="6"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer"/>
+</android.support.v4.widget.DrawerLayout>

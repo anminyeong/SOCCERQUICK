@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    >
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:src="@drawable/ic_soccer_ball"
+        android:layout_marginBottom="29dp"
+        android:layout_above="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SOCCER QUICK"
+        android:id="@+id/textView2"
+        android:textStyle="bold"
+        android:textColor="@color/icons"
+        android:layout_marginBottom="143dp"
+        android:textSize="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EASY "
+        android:id="@+id/textView4"
+        android:textColor="#F44336"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toLeftOf="@+id/textView6"
+        android:layout_toStartOf="@+id/textView6"
+        android:gravity="end" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" FAST"
+        android:id="@+id/textView5"
+        android:textColor="#F44336"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6"
+        android:gravity="start" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="and"
+        android:id="@+id/textView6"
+        android:textColor="@color/icons"
+        android:textSize="20dp"
+
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

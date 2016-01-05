@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="@string/nav_sub_menu">
+        <menu>
+            <item
+                android:id="@+id/drawer_item_1"
+                android:icon="@drawable/ic_emoticon"
+                android:title="@string/nav_sub_menu_item01"
+                />
+            <item
+                android:id="@+id/drawer_item_2"
+                android:icon="@drawable/ic_emoticon"
+                android:title="@string/nav_sub_menu_item02" />
+            <item
+                android:id="@+id/drawer_item_3"
+                android:icon="@drawable/ic_emoticon"
+                android:title="@string/nav_sub_menu_item03" />
+            <item
+                android:id="@+id/drawer_item_4"
+                android:icon="@drawable/ic_emoticon"
+                android:title="@string/nav_sub_menu_item04" />
+            <item
+                android:id="@+id/drawer_item_5"
+                android:icon="@drawable/ic_emoticon"
+                android:title="@string/nav_sub_menu_item05" />
+            <item
+                android:id="@+id/drawer_item_6"
+                android:icon="@drawable/ic_emoticon"
+                android:title="@string/nav_sub_menu_item06" />
+        </menu>
+    </item>
+
+</menu>
