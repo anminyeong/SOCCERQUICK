@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="com.example.soccerquick2.Fragment_Club.club_list"
+    android:background="#b2b9d7">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/round"
+        >
+
+        <TextView
+            android:id="@+id/index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_gravity="center"
+            android:layout_width="48dp"
+            android:layout_height="73dp"
+            android:src="@drawable/ic_launcher"
+            android:layout_weight="0.14" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="TextView"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/textView11"
+            android:layout_below="@+id/textView1"
+            android:layout_alignStart="@+id/textView1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="회원수: "
+            android:id="@+id/textView0"
+            android:layout_below="@+id/textView11"
+            android:layout_alignStart="@+id/textView11" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="회원수: "
+            android:id="@+id/textView12"
+            android:layout_toRightOf="@id/textView0"
+            android:layout_below="@+id/textView11" />
+
+        <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="가입신청"-->
+        <!--android:id="@+id/button8"-->
+        <!--android:onClick="onJoinButton"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:background="#ffd7d7" />-->
+
+        <Button android:layout_height="wrap_content"
+            android:layout_width="70dp"
+            android:id="@+id/button8"
+            android:text="가입신청"
+            android:textStyle="bold"
+
+            android:textColor="@color/icons"
+            android:background="@color/primary_dark"
+            android:onClick="onJoinButton"
+            android:ems ="6"
+            android:gravity="center"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

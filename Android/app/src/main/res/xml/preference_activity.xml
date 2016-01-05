@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <CheckBoxPreference
+        android:defaultValue = "false"
+        android:key="loading"
+        android:title="로딩화면"
+        android:icon="@drawable/loop"
+        android:summary="로딩화면을 설정합니다."/>
+
+    <CheckBoxPreference
+
+
+        android:defaultValue = "false"
+        android:key="bgm"
+        android:title="BGM"
+        android:icon="@drawable/bgm"
+        android:summary="음악서비스를 실행합니다."/>
+
+
+    <EditTextPreference
+
+
+
+        android:title="Developer(개발자) "
+        android:summary="심주용, 안민영, 유성호"
+        android:icon="@drawable/ball"
+
+        />
+
+
+
+</PreferenceScreen>

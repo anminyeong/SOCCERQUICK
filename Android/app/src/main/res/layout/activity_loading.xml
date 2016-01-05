@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    >
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:src="@drawable/ic_soccer_ball"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:id="@+id/line"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EASY "
+            android:id="@+id/textView4"
+            android:textColor="#F44336"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="and"
+            android:id="@+id/textView6"
+            android:textColor="@color/icons"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" FAST"
+            android:id="@+id/textView5"
+            android:textColor="#F44336"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_toRightOf="@+id/textView6" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="S"
+
+            android:textStyle="bold"
+            android:textColor="#F44336"
+            android:textSize="35dp"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toLeftOf="@+id/textView2"
+            android:layout_toStartOf="@+id/textView2"
+            android:id="@+id/textView30" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="OCCER"
+            android:id="@+id/textView2"
+            android:textStyle="bold"
+            android:textColor="@color/icons"
+            android:textSize="30dp"
+            android:layout_alignTop="@+id/textView29"
+            android:layout_alignRight="@+id/textView6"
+            android:layout_alignEnd="@+id/textView6" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Q"
+
+            android:textStyle="bold"
+            android:textColor="#F44336"
+            android:textSize="35dp"
+            android:id="@+id/textView28"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/textView5"
+
+            android:layout_marginLeft="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="UICK"
+
+            android:textStyle="bold"
+            android:textColor="@color/icons"
+
+            android:textSize="30dp"
+            android:id="@+id/textView29"
+            android:layout_below="@+id/textView28"
+
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

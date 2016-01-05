@@ -1,0 +1,99 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+
+        tools:context=".MainActivity"
+        android:weightSum="1">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/tv"
+            android:text="머리글"
+            android:layout_below="@+id/toolbar"
+            android:gravity="center_vertical"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp" />
+
+        <Spinner
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:id="@+id/spinner0"
+            android:textColor="#000000"
+            android:layout_below="@+id/toolbar"
+            android:layout_toRightOf="@+id/tv"
+            android:layout_marginLeft="10dp"></Spinner>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@android:layout/simple_list_item_2"
+            android:layout_above="@+id/button"
+            android:layout_below="@+id/spinner0"
+            android:divider="#00000000"
+            android:layout_marginTop="10dp">
+        </ListView>
+
+
+
+
+        <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/button"
+            android:text="글 쓰기"
+            android:textStyle="bold"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:textColor="@color/icons"
+            android:background="@color/primary_dark"
+            android:onClick="onButton"
+            android:ems ="6"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:layout_margin="16dp"-->
+        <!--android:clickable="true"-->
+        <!--android:src="@drawable/ic_plus_sign" />-->
+
+
+
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer"/>
+</android.support.v4.widget.DrawerLayout>

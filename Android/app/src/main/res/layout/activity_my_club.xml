@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b2b9d7"
+    tools:context="com.example.soccerquick2.MyClub">
+
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView3"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentEnd="false"
+        android:layout_above="@+id/login_btn"
+        android:divider="#00000000"/>
+
+
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/button11"
+        android:text="클럽게시판 입장"
+        android:textStyle="bold"
+        android:textSize="@dimen/activity_horizontal_margin"
+        android:textColor="@color/icons"
+        android:background="@color/primary_dark"
+        android:ems ="6"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp" />
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="클럽 게시판"-->
+    <!--android:id="@+id/button11"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentStart="true" />-->
+</RelativeLayout>

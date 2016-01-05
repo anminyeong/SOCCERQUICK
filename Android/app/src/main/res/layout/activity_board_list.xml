@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:background="#b2b9d7">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/round"
+        >
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="15dp"
+            android:text="글머리"
+            android:gravity="center_vertical"
+            android:layout_marginRight="10dp" />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/header"
+            android:textSize="25dp"
+            android:text="TextView"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="작성자:"
+            android:id="@+id/textViewId"
+            android:layout_toRightOf="@+id/header"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@+id/title"
+            android:layout_alignParentBottom="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@+id/title"
+            android:layout_toRightOf="@+id/textViewId"
+            android:layout_toEndOf="@+id/textViewId" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="작성날짜"
+            android:id="@+id/textDate"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
