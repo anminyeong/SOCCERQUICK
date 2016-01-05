@@ -6,10 +6,10 @@
 어플리케이션의 기능으로는 풋살팀의 대표가 모바일 앱애서 5vs5, 6vs6등과 같이 게임규칙 및 인원을 설정하여 게시판을 만들고 매치를 원하는 사용자에게 핸드폰 및 카톡으로 연락을 받아 매치를 잡습니다. 또한, 커뮤니티 페이지에서 풋살 유저들간의 친목 또는 풋살 동영상, 풋살관련뉴스, 본인의 풋살용품자랑 등을 올릴 수 있습니다.
 
 # 앱 시연 동영상(Youtube)
-<h1>https://youtu.be/th9QcHrZPA0<h1>
+<h3>https://youtu.be/th9QcHrZPA0<h3>
 
 # 프로젝트 소개서  
-http://www.slideshare.net/fullscreen/ssusere650f9/naver-d2soccer-quick/1  
+<h3>http://www.slideshare.net/fullscreen/ssusere650f9/naver-d2soccer-quick/1<h3>
 
 # 사용한 오픈소스 이름과 홈페이지 목록  
 없음  
